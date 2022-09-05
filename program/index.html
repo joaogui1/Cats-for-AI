@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/logo.svg"/>
+    <meta property='og:title' content="Understanding DL">
+    <meta property='og:description' content="This seminar series seeks to promote interesting works that study how and why Deep Learning works, why Neural Networks generalize despite what classical theories would suggest, and more generally promote the Understanding of Deep Learning.">
+    <meta property='og:image' content="./assets/ICMC (1).jpg">
+
+    <script type="text/javascript" async
+        src="/assets/main.js">
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
+    </script>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="A Data ICMC Lecture Series">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Understanding Deep Learning</title>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="../assets/ICMC (1).jpg" alt="Conference Template Banner" style="max-width: 1000px;">
+        <div class="top-left">
+            <span class="title1">Understanding</span><span class="title2">DL</span> 
+        </div>
+        <div class="bottom-right">
+            April 19, 2021 <br> Virtual Lecture Series hosted by Data ICMC
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a title="Event Home Page" href=".">Home</a>
+            </td>
+            <td class="navigation">
+                <a class="current" title="Event Program" href="program">Program</a> 
+            </td>
+        </tr>
+    </table>
+    
+    <h2>Program</h2>
+    <p>This lecture series consists of <b>11 weeks</b> with two classes each, these being: an <b>introductory lecture</b> and an <b>application lecture</b>. The introductory lectures aim to put every participant "on the same page" regarding a prerequisite of the following application lecture, whereas the application lectures aim to expose and apply an approach based on the contents explored in the introductory lecture to expand the understanding of Deep Learning methods. In the final week, we will have an additional panel featuring previous lecturers aiming to discuss the frontlines of this new field and wrapping up the content seen in the entirety of the whole event.
+
+    <p>All meetings will be transmited and the links will be posted in this page. Don't worry if you miss any meeting, the recordings will be available at <a href="https://www.youtube.com/c/DataICMC/featured">Data ICMC YouTube Channel</a>!</p>
+
+    <p>
+    <b>Important:</b><br>
+    <ul>
+        <li style="list-style: disc;"><span style="color: #b2132e; font-weight: bold;">All the highlighted in red will be taught in Portuguese</span></li>
+        <li style="list-style: disc;"><span style="color: #52739e; font-weight: bold;">While all the lectures highlighted in blue will be taught in English</span></li>
+        <li style="list-style: disc;">The full schedule of this page is in the São Paulo, Brazil (GMT -3:00) time zone, which can be quickly converted <a href="https://www.thetimezoneconverter.com/">here</a></li>
+        <li style="list-style: disc;">You can add this series of events to <a href="https://calendar.google.com/calendar/u/1?cid=Y19xamJkajQ1dTRycGk4cWF2ajVsZ2VwM25wNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Calendar</a> or any <a href="../assets/UnderstandingDL - Lecture Series_c_qjbdj45u4rpi8qavj5lgep3np4@group.calendar.google.com.ics" download="understandingdl">other calendar app</a> you prefer.</li>
+        <li style="list-style: disc;">This event <b>does not</b> offer any kind of certificate of attendance!</li>
+    </ul>
+    </p>
+
+    <div style="margin: 5%;"></div>
+
+    
+    <b>Week 1</b>
+    <hr class="divider">
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                Apr 19, 2021 <br> 06:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #b2132e;">
+                Opening and introductory lecture 1: Introduction to Deep Learning (Portuguese) - <a href="https://www.youtube.com/watch?v=uevf_l47Fp0">Recording Link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                A Leo Sampaio (Universidade de São Paulo)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Introduction to the basic principles of Machine Learning (ML); discussion of the importance of data and its representations for learning; introduction to the first Neural Network algorithms in the area; explanation of the concept of convolution and its application in convolutional neural networks; presentation of different deep network architectures (Deep Learning); introduction of the traditional concept of generalization, importance of representations and kernels.
+            </td>
+        </tr>
+    </table>
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                Apr 23, 2021 <br> 02:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 1: Understanding Generalization Requires Rethinking Deep Learning (English) - <a href="https://youtu.be/wi9mjnDfS7Y">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Boaz Barak and Gal Kaplun (Harvard)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                The generalization gap of a learning algorithm is the expected difference between its performance on the training data and its performance on fresh unseen test samples. Modern deep learning algorithms typically have large generalization gaps, as they use more parameters than the size of their training set. Moreover the best known rigorous bounds on their generalization gap are often vacuous.
+                In this talk we will see a new upper bound on the generalization gap of classifiers that are obtained by first using self-supervision to learn a complex representation of the (label free) training data, and then fitting a simple (e.g., linear) classifier to the labels. Such classifiers have become increasingly popular in recent years, as they offer several practical advantages and have been shown to approach state-of-art results.
+                We show that (under the assumptions described below) the generalization gap of such classifiers tends to zero as long as the complexity of the simple classifier is asymptotically smaller than the number of training samples. We stress that our bound is independent of the complexity of the representation that can use an arbitrarily large number of parameters. Our bound holds assuming that the learning algorithm satisfies certain noise-robustness (adding small amount of label noise causes small degradation in performance) and rationality (getting the wrong label is not better than getting no label at all) properties.  These conditions widely (and sometimes provably) hold across many standard architectures. We complement this result with an empirical study, demonstrating that our bound is non-vacuous for many popular representation-learning based classifiers on CIFAR-10 and ImageNet, including SimCLR, AMDIM and BigBiGAN.
+
+                The talk will not assume any specific background in machine learning, and should be accessible to a general mathematical audience. Joint work with Yamini Bansal.
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-1')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-1" style="display: none;">
+                    <b>Bio:</b> Boaz Barak is the Gordon McKay professor of Computer Science at Harvard University's John A. Paulson school of Engineering and Applied Sciences. His research interests include all areas of theoretical computer science and in particular cryptography and computational complexity. Previously, he was a principal researcher at Microsoft Research New England, and before that an associate professor (with tenure) at Princeton University's computer science department. Barak has won the ACM dissertation award, the Packard and Sloan fellowships, and was also selected for Foreign Policy magazine's list of 100 leading global thinkers for 2014 and chosen as a Simons investigator in 2017 . He serves on the editorial boards of several journals and is also a member of the Committee for the Advancement of Theoretical Computer Science and the scientific advisory board for the Simons Institute for the Theory of Computing. He wrote with Sanjeev Arora the textbook "Computational Complexity: A Modern Approach".
+                    <br><br>
+                    Gal Kaplun is a third-year Ph.D. candidate at the Computer Science Department at Harvard University, under the supervision of Prof. Yaron Singer. Gal is working with the Harvard Theory of Machine Learning group, focusing on a deep understanding of Machine Learning models.
+
+                    Gal's research interests revolve around investigating the mysteries of Deep Learning---why and how overparameterized models generalize, what are the failure modes of Deep Networks, how can we make models robust to distribution shift and adversarial examples. At the moment, Gal is exploring the theory behind the emergent area of self-supervised learning, in particular, what is the driving mechanism behind contrastive learning
+
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+
+    <b>Week 2</b>
+    <hr class="divider">
+    <table>
+        <tr>
+            <td class="date" rowspan="4">
+                Apr 26, 2021 <br> 01:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Introductory lecture 2: From parametric models to Gaussian Processes (English) - <a href="https://youtu.be/rdRrHye_R9o">Recording link</a> / <a href="http://yingzhenli.net/home/pdf/usp_gp_talk_apr2021.pdf">Slides</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Yingzhen Li (Imperial College London)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-li')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-li" style="display: none;">
+                    <b>Bio:</b> Yingzhen Li is currently a lecturer at the Department of Computing at Imperial College London. She is interested in building reliable machine learning systems which can generalise to unseen environments and approaches this goal using probabilistic modelling and representation learning. In general, she is also interested in transfer/meta learning, information theory, optimisation, and sequential data modelling.
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                Apr 30, 2021 <br> 02:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 2: The Wide limit of Neural Networks: NNGP and NTK (English) - <a href="https://youtu.be/fcpI5z9q91A">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Jascha Sohl-Dickstein (Google Brain)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                As neural networks become wider their accuracy improves, and their behavior becomes easier to analyze theoretically. I will give an introduction to a rapidly growing field -- closely connected to statistical physics -- which examines the learning dynamics and prior over functions induced by infinitely wide, randomly initialized, neural networks. Core results that I will discuss include: that the distribution over functions computed by a wide neural network often corresponds to a Gaussian process with a particular compositional kernel, both before and after training; that the predictions of wide neural networks are linear in their parameters throughout training; and that this perspective enables analytic predictions for how trainability of finite width networks depends on hyperparameters and architecture. These results provide for surprising capabilities -- for instance, the evaluation of test set predictions which would come from an infinitely wide trained neural network without ever instantiating a neural network, or the rapid training of 10,000+ layer convolutional networks. I will argue that this growing understanding of neural networks in the limit of infinite width is foundational for future theoretical and practical understanding of deep learning.
+                
+                <a href="https://github.com/google/neural-tangents">Neural Tangents (software library for working with infinite width networks)</a>
+                
+            </td>
+         </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-2')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-2" style="display: none;">
+                    <b>Bio:</b> Jascha is a senior staff research scientist in Google Brain, and leads a research team with interests spanning machine learning, physics, and neuroscience. He was previously a visiting scholar in Surya Ganguli's lab at Stanford, and an academic resident at Khan Academy. He earned his PhD in 2012 in Bruno Olshausen's lab in the Redwood Center for Theoretical Neuroscience at UC Berkeley. Prior to his PhD, he spent several years working for NASA on the Mars Exploration Rover mission.
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <b>Week 3</b>
+    <hr class="divider">
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                May 3, 2021 <br> 05:30 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #b2132e;">
+                Introductory lecture 3: Dynamical Systems (Portuguese) - <a href="https://www.youtube.com/watch?v=MqpFrJShZMw">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Tiago Pereira (Universidade de São Paulo)
+            </td>
+        </tr>
+        <!-- <tr>
+            <td class="abstract">
+                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
+            </td>
+        </tr> -->
+    </table>
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                May 7, 2021 <br> 03:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 3: The Catapult phase of Neural Networks (English) - <a href="https://www.youtube.com/watch?v=aPY-M4epEz4">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Guy Gur-Ari (Google)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                Why do large learning rates often produce better results? Why do “infinitely wide” networks trained using kernel methods tend to underperform ordinary networks? In the talk I will argue that these questions are related. Existing kernel-based theory can explain the dynamics of networks trained with small learning rates. However, optimal performance is often achieved at large learning rates, where we find qualitatively different dynamics that converge to flat minima. The distinction between the small and large learning rate phases becomes sharp at infinite width, and is reminiscent of nonperturbative phase transitions that appear in physical systems.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-ari')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-ari" style="display: none;">
+                    <b>Bio:</b> Why do large learning rates often produce better results? Why do “infinitely wide” networks trained using kernel methods tend to underperform ordinary networks? In the talk I will argue that these questions are related. Existing kernel-based theory can explain the dynamics of networks trained with small learning rates. However, optimal performance is often achieved at large learning rates, where we find qualitatively different dynamics that converge to flat minima. The distinction between the small and large learning rate phases becomes sharp at infinite width, and is reminiscent of nonperturbative phase transitions that appear in physical systems.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <b>Week 4</b>
+    <hr class="divider">
+
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                May 14, 2021 <br> 03:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 4: Signal Propagation and Dynamical Isometry in Deep Neural Networks (English) - <a href="https://www.youtube.com/watch?v=IwrpOhfhj9o&t=0s">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Samuel S Schoenholz (Google Brain)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                Random neural networks converge to Gaussian Processes in the limit of infinite width. In this talk we will study how signals propagate through these wide and random networks. At large depth, we will show that a phase diagram naturally emerges between an “ordered” phase where all pairs of inputs converge to the same output and a “chaotic” phase where nearby become increasingly dissimilar with depth. We will then consider fluctuations of gradients as they are backpropagated through the network. We will show that the distribution of gradient fluctuations can be controlled via the random distribution of weights used for initialization. We will discuss empirical observations about the relationship between this prior and training dynamics. In his talk, Lechao Xiao will elaborate on this relationship via the Neural Tangent Kernel.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-Sam')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-Sam" style="display: none;">
+                    <b>Bio:</b> Sam is a Senior Research Scientist at Google Brain working at the intersection between Machine Learning and Physics. His work focuses on better understanding the large-width limit of neural networks using techniques from statistical physics as well as applying advances in Machine Learning to physical systems. Sam received his PhD in Physics from the University of Pennsylvania in 2015.
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <b>Week 5</b>
+    <hr class="divider">
+
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                May 21, 2021 <br> 05:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 5: Neural Network Loss Landscape in High Dimensions (English) - <a href="https://www.youtube.com/watch?v=stTzg8iUaXM">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Stanislav Fort (Stanford / Google AI)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                Deep neural networks trained with gradient descent have been extremely successful at learning solutions to a broad suite of difficult problems across a wide range of domains such as vision, gameplay, and natural language, many of which had previously been considered to require intelligence. Despite their tremendous success, we still do not have a detailed, predictive understanding of how these systems work. In my talk, I will focus on recent efforts to understand the structure of deep neural network loss landscapes and how gradient descent navigates them during training. I will discuss how we can use tools from high-dimensional geometry to build a phenomenological model of their large-scale structure, the role of their non-linear nature in the early phases of training, and its effects on ensembling, calibration, and out-of-distribution behavior.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-5')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-5" style="display: none;">
+                    <b>Bio:</b> Stanislav Fort is a PhD student at Stanford University, advised by Prof Surya Ganguli. His research focuses on developing a scientific understanding of deep learning and on applications of machine learning and artificial intelligence in the physical sciences, in domains spanning from X-ray astrophysics to quantum computing. Stanislav spent a year as a Google AI Resident, where he worked on deep learning theories and their applications in collaboration with colleagues from Google Brain and DeepMind. He received his Bachelor’s and Master’s degrees in Physics at Trinity College, University of Cambridge, and a Master’s degree at Stanford University.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <b>Week 6</b>
+    <hr class="divider">
+
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                May 28, 2021 <br> 04:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 6: Disentangling Trainability and Generalization in Deep Neural Networks (English) - <a href="https://www.youtube.com/watch?v=4wiFeJOdro4">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Lechao Xiao (Google Brain)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                A longstanding goal in the theory of deep learning is to characterize the conditions under which a given neural network architecture will be trainable, and if so, how well it might generalize to unseen data. In this work, we provide such a characterization in the limit of very wide and very deep networks, for which the analysis simplifies considerably. For wide networks, the trajectory under gradient descent is governed by the Neural Tangent Kernel (NTK), and for deep networks, the NTK itself maintains only weak data dependence. By analyzing the spectrum of the NTK, we formulate necessary conditions for trainability and generalization across a range of architectures, including Fully Connected Networks (FCNs) and Convolutional Neural Networks (CNNs). We identify large regions of hyperparameter space for which networks can memorize the training set but completely fail to generalize. We find that CNNs without global average pooling behave almost identically to FCNs, but that CNNs with pooling have markedly different and often better generalization performance. A thorough empirical investigation of these theoretical results shows excellent agreement on real datasets.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-6')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-6" style="display: none;">
+                    <b>Bio:</b> Lechao Xiao is a research scientist in the Brain Team, Google Research.  He works on theory of deep learning, including optimization, Gaussian Processes, generalization of neural networks. Before joining Google, he was a Hans Rademacher Instructor at the University of Pennsylvania working on Harmonic analysis. He received his Ph.D. in mathematics from the University of Illinois at Urbana-Champaign in 2014 and his B.S. in mathematics from Zhejiang University in 2009.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <b>Week 7</b>
+    <hr class="divider">
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                May 31, 2021 <br> 06:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #b2132e;">
+                Introductory lecture 7: Introduction to Statistical Mechanics (Portuguese) - <a href="https://youtu.be/LoYyQ0M7j5Y">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Tereza Cristina da Rocha Mendes (Universidade de São Paulo)
+            </td>
+        </tr>
+        <!-- <tr>
+            <td class="abstract">
+                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
+            </td>
+        </tr> -->
+    </table>
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                Jun 4, 2021 <br> 10:00 AM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 7: Explaining Neural Scaling Laws (English) - <a href="https://www.youtube.com/watch?v=A8F4Qga3NaM&ab_channel=DataICMC">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Jaehoon Lee (Google Brain)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                For a large variety of models and datasets, neural network performance has been empirically observed to scale as a power-law with model size and dataset size. We would like to understand why these power laws emerge, and what features of the data and models determine the values of the power-law exponents. Since these exponents determine how quickly performance improves with more data and larger models, they are of great importance when considering whether to scale up existing models. In this talk, we’ll survey some of the well-known power-law scaling behavior observed in deep neural networks. Drawing intuition from statistical physics, we observe that a simplifying limit arises as one scales up deep learning models. We’ll talk about a theoretical framework that explains and connects various scaling laws. We identify variance-limited and resolution-limited scaling behavior for both dataset and model size, for a total of four scaling regimes.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-7')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-7" style="display: none;">
+                    <b>Bio:</b> Jaehoon Lee is a senior research scientist at Google Brain team. His main research focus is on fundamental understanding of deep neural networks; actively working on the infinite-width limit of neural networks and their correspondence to the kernel methods. In 2017, he joined Google and started a research career in machine learning as part of the Google Brain Residency program. Before that he was a postdoctoral fellow at University of British Columbia from 2015-2017 working on theoretical high energy physics. Jaehoon obtained his PhD in physics at the Center for Theoretical Physics, Massachusetts Institute of Technology (MIT) in 2015.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <b>Week 8</b>
+    <hr class="divider">
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                Jun 7, 2021 <br> 06:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #b2132e;"> 
+                Introductory lecture 8: Introduction to Information Theory (Portuguese) - <a href="https://youtu.be/PRTlwr6AJyI">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Eduarda Chagas (Universidade Federal de Minas Gerais)
+            </td>
+        </tr>
+        <!-- <tr>
+            <td class="abstract">
+                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
+            </td>
+        </tr> -->
+    </table>
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                Jun 11, 2021 <br> 02:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 8: Progress Towards Understanding Generalization in Deep Learning (English) - <a href="https://youtu.be/Et_v-EIxqUs">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Gintare Karolina Dziugaite (Element AI)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                There is, as yet, no satisfying theory explaining why common learning algorithms, like those based on stochastic gradient descent, generalize in practice on overparameterized neural networks. I will discuss various approaches that have been taken to explaining generalization in deep learning, and identify some of the barriers these approaches faced. I will then discuss my recent work on information-theoretic and PAC-Bayesian approaches to understanding generalization in noisy variants of SGD. In particular, I will highlight how we can take advantage of conditioning to obtain sharper data- and distribution-dependent generalization measures. I will also briefly touch upon my work on properties of the optimization landscape and some of the challenges we face incorporating these insights into the theory of generalization.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-8')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-8" style="display: none;">
+                    <b>Bio:</b> Gintare Karolina Dziugaite is a Lead Research Scientist at Element AI, a ServiceNow company. She is also an associate member at Mila, the Quebec AI Institute. Her research combines theoretical and empirical approaches to understanding deep learning, with a focus on generalization and network compression. Before joining Element AI, she obtained her Ph.D. in machine learning from the University of Cambridge, under the supervision of Zoubin Ghahramani. Prior to that, she studied Mathematics at the University of Warwick and read Part III in Mathematics at the University of Cambridge, receiving a Masters of Advanced Study (MASt) in Applied Mathematics. In 2020, Karolina was a member of the Institute for Advanced Study,, participating in the special year on Optimization, Statistics, and Theoretical Machine Learning. In 2019, she was a Simons Fellow during the Foundations of Deep Learning program at the Simons Institute for the Theory of Computing at the University of Berkeley from programs. She was also a long-term participant at the Simons Institute in 2017 and 2020 during programs on theoretical machine learning and interpretable machine learning.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <b>Week 9</b>
+    <hr class="divider">
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                Jun 18, 2021 <br> 01:30 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 9: Information-Theoretic Generalization Bounds for Stochastic Gradient Descent (English) - <a href="https://www.youtube.com/watch?v=jJrOLPZJxSI">Recording link</a> 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Gergely Neu (Universitat Pompeu Fabra)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                We study the generalization properties of the popular stochastic gradient descent method for optimizing general non-convex loss functions. Our main contribution is providing upper bounds on the generalization error that depend on local statistics of the stochastic gradients evaluated along the path of iterates calculated by SGD. The key factors our bounds depend on are the variance of the gradients (with respect to the data distribution) and the local smoothness of the objective function along the SGD path, and the sensitivity of the loss function to perturbations to the final output. Our key technical tool is combining the information-theoretic generalization bounds previously used for analyzing randomized variants of SGD with a perturbation analysis of the iterates.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-9')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-9" style="display: none;">
+                    <b>Bio:</b> Gergely Neu is a research assistant professor at the Pompeu Fabra University,
+                    Barcelona, Spain. He has previously worked with the SequeL team of INRIA Lille,
+                    France and the RLAI group at the University of Alberta, Edmonton, Canada. He
+                    obtained his PhD degree in 2013 from the Budapest University of Technology and
+                    Economics, where his advisors were András György, Csaba Szepesvári and László
+                    Györfi. His main research interests are in machine learning theory, including
+                    reinforcement learning and online learning with limited feedback and/or very
+                    large action sets. Dr. Neu was the recipient of a Google Faculty Research award
+                    in 2018, the Bosch Young AI Researcher Award in 2019, and an ERC Starting
+                    Grant in 2020.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <b>Week 10</b>
+    <hr class="divider">
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                Jun 21, 2021 <br> 04:00 PM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #b2132e;">
+                Introductory lecture 10: Introduction to Category Theory: Up to Monoidal Categories (Portuguese) - <a href="https://www.youtube.com/watch?v=7ypPI7jHOTA">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Jose Vitor Paiva Miranda Siqueira (University of Cambridge)
+            </td>
+        </tr>
+        <!-- <tr>
+            <td class="abstract">
+                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
+            </td>
+        </tr> -->
+    </table>
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                
+                Jun 25, 2021 <br> 04:00 PM (GMT -3:00)
+
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 10: Backprop as a Functor (English) - <a href="https://www.youtube.com/watch?v=N9zZeACcV98">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Brendan Fong (MIT / Topos Institute)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                A supervised learning algorithm searches over a set of functions \(A→B\) parametrised by a space \(P\) to find the best approximation to some ideal function \(f:A→B\). It does this by taking examples \((a,f(a))∈A×B\), and updating the parameter according to some rule. We define a category where these update rules may be composed, and show that gradient descent --- with respect to a fixed step size and an error function satisfying a certain property --- defines a monoidal functor from a category of parametrised functions to this category of update rules. This provides a structural perspective on backpropagation, as well as a broad generalisation of neural networks.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-10')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-10" style="display: none;">
+                    <b>Bio:</b> Brendan Fong oversees coordination and strategic planning at Topos. He holds a PhD in computer science from Oxford, and undertook postdoctoral studies in systems engineering and mathematics at UPenn and MIT. He is a founding executive editor of the open-access journal Compositionality, and co-authored the textbook An Invitation to Applied Category Theory. Brendan believes technologies of connection and integration are already transforming the world we live in, and is dedicated to ensuring that these transformations benefit society-at-large.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <b>Week 11</b>
+    <hr class="divider">
+    <!-- <table>
+        <tr>
+            <td class="date" rowspan="3">
+                Jun 28, 2021 <br> Time yet to be defined
+            </td>
+            <td class="title" style="color: #b2132e;">
+                Introductory lecture 11: (Portuguese)
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                To be defined
+            </td>
+        </tr>
+
+    </table> -->
+    
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="4">
+                
+                Jul 2, 2021 <br> 02:00 PM (GMT -3:00)
+
+            </td>
+            <td class="title" style="color: #52739e;">
+                Lecture 11: Learning Functors using Gradient Descent (English) - <a href="https://www.youtube.com/watch?v=SQqzs3uAqGM">Recording link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Bruno Gavranović (University of Strathclyde)
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                CycleGAN is a general approach to unpaired image-to-image translation that has been getting attention in recent years. Inspired by categorical database systems, we show that CycleGAN is a "schema", i.e. a specific category presented by generators and relations, whose specific parameter instantiations are just set-valued functors on this schema. We show that enforcing cycle-consistencies amounts to enforcing composition invariants in this category. We generalize the learning procedure to arbitrary such categories and show that a special class of functors, rather than functions, can be learned using gradient descent. Using this framework we design a novel neural network system capable of learning to insert and delete objects from images without paired data. We qualitatively evaluate the system on three different datasets and obtain promising results.
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-11')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-11" style="display: none;">
+                    <b>Bio:</b> Bruno Gavranović is a PhD student at the Mathematically Structured Programming (MSP) group in Glasgow, advised by Neil Ghani. He is  understanding machine learning and game theory through the lens of category theory and functional programming. Before joining MSP, he obtained his Bachelors and Masters at Faculty of Electrical Engineering and Computing (FER) in Zagreb.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <table class="plenary">
+        <tr>
+            <td class="date" rowspan="3">
+                Jul 09, 2021 <br> 11:00 AM (GMT -3:00)
+            </td>
+            <td class="title" style="color: #52739e">
+                Panel: The Many Paths to Understanding Deep Learning (English) - <a href="https://www.youtube.com/watch?v=NfvYufQwA_o">Recording link link</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Brendan Fong (MIT / Topos Institute), Gintare Karolina (Element AI), Oriol Vinyals (DeepMind), Yasaman Bahri (Google Research)
+            </td>
+        </tr>
+        <tr>
+            <!-- <td class="abstract">
+                Here&rsquo;s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
+                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+            </td> -->
+        </tr>
+    </table><!--  -->
+
+    <table class="footer">
+        <tr>
+            <td class="footer">Design by <a target="_blank" href="http://math.ucr.edu/~mpierce/">Mike Pierce</a></td> 
+            <td class="footer">&copy; Data ICMC</td> 
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
+
