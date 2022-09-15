@@ -45,7 +45,8 @@ a:active{color: #e82945;}
 h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 h1{font-size:2.67em;}
 h2{font-size:2.00em;}
-h2.forms{font-size:2.30em; color:#e81e1e; background-color: rgb(197, 242, 235); padding:0.5em 0em 0.5em 0em; text-shadow: 1px 1px 1px rgb(253, 2, 2);}
+h2.forms{font-size:2.30em; color:#e81e1e; background-color: rgb(231, 240, 163); padding:0.5em 0em 0.5em 0em;}
+h2 a{color: #0b0bb8; text-decoration: underline;}
 h3{font-size:1.67em;}
 h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
