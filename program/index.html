@@ -47,7 +47,7 @@
     </table>
     
     <h2>Program</h2>
-    <p>This lecture series consists of <b>11 weeks</b> with two classes each, 
+    <p>This lecture series consists of <b>13 weeks</b> , 
         these being: an <b>introductory lecture</b> and an <b>application 
             lecture</b>. The introductory lectures aim to put every participant 
             "on the same page" regarding a prerequisite of the following application 
@@ -75,49 +75,32 @@
     
     <b>Week 1</b>
     <hr class="divider">
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                Apr 19, 2021 <br> 06:00 PM (GMT -3:00)
-            </td>
-            <td class="title" style="color: #b2132e;">
-                Opening and introductory lecture 1: Introduction to Deep Learning (Portuguese) - <a href="https://www.youtube.com/watch?v=uevf_l47Fp0">Recording Link</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                A Leo Sampaio (Universidade de São Paulo)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Introduction to the basic principles of Machine Learning (ML); discussion of the importance of data and its representations for learning; introduction to the first Neural Network algorithms in the area; explanation of the concept of convolution and its application in convolutional neural networks; presentation of different deep network architectures (Deep Learning); introduction of the traditional concept of generalization, importance of representations and kernels.
-            </td>
-        </tr>
-    </table>
     
-    <table id="PUTSPEAKERNAMEHERE">
+    <table id="bruno">
         <tr>
             <td class="date" rowspan="4">
                 Apr 23, 2021 <br> 02:00 PM (GMT -3:00)
             </td>
             <td class="title" style="color: #52739e;">
-                Lecture 1: Understanding Generalization Requires Rethinking Deep Learning (English) - <a href="https://youtu.be/wi9mjnDfS7Y">Recording link</a>
+                Lecture 1: Why Category Theory? - <a href="">Recording link</a>
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Boaz Barak and Gal Kaplun (Harvard)
+                Bruno Gavranović
             </td>
         </tr>
         
         <tr>
-            <td class="abstract">
-                The generalization gap of a learning algorithm is the expected difference between its performance on the training data and its performance on fresh unseen test samples. Modern deep learning algorithms typically have large generalization gaps, as they use more parameters than the size of their training set. Moreover the best known rigorous bounds on their generalization gap are often vacuous.
-                In this talk we will see a new upper bound on the generalization gap of classifiers that are obtained by first using self-supervision to learn a complex representation of the (label free) training data, and then fitting a simple (e.g., linear) classifier to the labels. Such classifiers have become increasingly popular in recent years, as they offer several practical advantages and have been shown to approach state-of-art results.
-                We show that (under the assumptions described below) the generalization gap of such classifiers tends to zero as long as the complexity of the simple classifier is asymptotically smaller than the number of training samples. We stress that our bound is independent of the complexity of the representation that can use an arbitrarily large number of parameters. Our bound holds assuming that the learning algorithm satisfies certain noise-robustness (adding small amount of label noise causes small degradation in performance) and rationality (getting the wrong label is not better than getting no label at all) properties.  These conditions widely (and sometimes provably) hold across many standard architectures. We complement this result with an empirical study, demonstrating that our bound is non-vacuous for many popular representation-learning based classifiers on CIFAR-10 and ImageNet, including SimCLR, AMDIM and BigBiGAN.
-
-                The talk will not assume any specific background in machine learning, and should be accessible to a general mathematical audience. Joint work with Yamini Bansal.
+            <td class="learning-goals">
+                By the end of this lecture you will:
+                <ul>
+                    <li>Get a sense of the philosophy and motivation behind Category Theory</li>
+                    <li>Learn about the recent wave of its applications emerging throughout the sciences</li>
+                    <li>Understand how this formal mathematical language rigorously adheres to the concept of modularity</li>
+                    <li>Dispel with the fallacy that CT is not relevant to practical disciplines such as programming or engineering</li>
+                    <li>Get a sense of how CT can help us design and scale our deep learning systems</li>
+                </ul>
 
             </td>
         </tr>
@@ -139,55 +122,32 @@
 
     <b>Week 2</b>
     <hr class="divider">
-    <table>
-        <tr>
-            <td class="date" rowspan="4">
-                Apr 26, 2021 <br> 01:00 PM (GMT -3:00)
-            </td>
-            <td class="title" style="color: #52739e;">
-                Introductory lecture 2: From parametric models to Gaussian Processes (English) - <a href="https://youtu.be/rdRrHye_R9o">Recording link</a> / <a href="http://yingzhenli.net/home/pdf/usp_gp_talk_apr2021.pdf">Slides</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Yingzhen Li (Imperial College London)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a onclick="toggleText('bio-speaker-li')" >Show / Hide Biography</a>
-                <div class='bio' id="bio-speaker-li" style="display: none;">
-                    <b>Bio:</b> Yingzhen Li is currently a lecturer at the Department of Computing at Imperial College London. She is interested in building reliable machine learning systems which can generalise to unseen environments and approaches this goal using probabilistic modelling and representation learning. In general, she is also interested in transfer/meta learning, information theory, optimisation, and sequential data modelling.
-                </div>
-            </td>
-        </tr>
-    </table>
     
-    <table id="PUTSPEAKERNAMEHERE">
+    <table id="petar">
         <tr>
             <td class="date" rowspan="4">
                 Apr 30, 2021 <br> 02:00 PM (GMT -3:00)
             </td>
             <td class="title" style="color: #52739e;">
-                Lecture 2: The Wide limit of Neural Networks: NNGP and NTK (English) - <a href="https://youtu.be/fcpI5z9q91A">Recording link</a>
+                Lecture 2: Essential building blocks: Categories and Functors - <a href="">Recording link</a>
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Jascha Sohl-Dickstein (Google Brain)
+                Petar Veličković
             </td>
         </tr>
         
         <tr>
             <td class="abstract">
-                As neural networks become wider their accuracy improves, and their behavior becomes easier to analyze theoretically. I will give an introduction to a rapidly growing field -- closely connected to statistical physics -- which examines the learning dynamics and prior over functions induced by infinitely wide, randomly initialized, neural networks. Core results that I will discuss include: that the distribution over functions computed by a wide neural network often corresponds to a Gaussian process with a particular compositional kernel, both before and after training; that the predictions of wide neural networks are linear in their parameters throughout training; and that this perspective enables analytic predictions for how trainability of finite width networks depends on hyperparameters and architecture. These results provide for surprising capabilities -- for instance, the evaluation of test set predictions which would come from an infinitely wide trained neural network without ever instantiating a neural network, or the rapid training of 10,000+ layer convolutional networks. I will argue that this growing understanding of neural networks in the limit of infinite width is foundational for future theoretical and practical understanding of deep learning.
-                
-                <a href="https://github.com/google/neural-tangents">Neural Tangents (software library for working with infinite width networks)</a>
+                By the end of this lecture you will:
+                <ul>
+                   <li>Understand the key building blocks of categories: objects, morphisms and functors.</li>
+                   <li>Leverage these concepts to explain several standard mathematical constructs: sets, relations, and groups.</li>
+                   <li>Get comfortable manipulating these concepts through several worked exercises.</li>
+                   <li>Ground all of the above in relevant deep learning context, with links to functional programming.</li>
+                   <li>Show how we can build an effective "type checker" for deep learning using the category of sets.</li>
+                </ul>
                 
             </td>
          </tr>
@@ -204,45 +164,33 @@
 
     <b>Week 3</b>
     <hr class="divider">
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                May 3, 2021 <br> 05:30 PM (GMT -3:00)
-            </td>
-            <td class="title" style="color: #b2132e;">
-                Introductory lecture 3: Dynamical Systems (Portuguese) - <a href="https://www.youtube.com/watch?v=MqpFrJShZMw">Recording link</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Tiago Pereira (Universidade de São Paulo)
-            </td>
-        </tr>
-        <!-- <tr>
-            <td class="abstract">
-                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
-            </td>
-        </tr> -->
-    </table>
     
-    <table id="PUTSPEAKERNAMEHERE">
+    <table id="bruno">
         <tr>
             <td class="date" rowspan="4">
                 May 7, 2021 <br> 03:00 PM (GMT -3:00)
             </td>
             <td class="title" style="color: #52739e;">
-                Lecture 3: The Catapult phase of Neural Networks (English) - <a href="https://www.youtube.com/watch?v=aPY-M4epEz4">Recording link</a>
+                Lecture 3: Categorical Dataflow: Optics and Lenses as data structures for backpropagation - <a href="">Recording link</a>
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Guy Gur-Ari (Google)
+                Bruno Gavranović
             </td>
         </tr>
         
         <tr>
             <td class="abstract">
-                Why do large learning rates often produce better results? Why do “infinitely wide” networks trained using kernel methods tend to underperform ordinary networks? In the talk I will argue that these questions are related. Existing kernel-based theory can explain the dynamics of networks trained with small learning rates. However, optimal performance is often achieved at large learning rates, where we find qualitatively different dynamics that converge to flat minima. The distinction between the small and large learning rate phases becomes sharp at infinite width, and is reminiscent of nonperturbative phase transitions that appear in physical systems.
+                By the end of this lecture you will:
+                <ul>
+                    <li>Understand the difference between a monoidal and a cartesian category</li>
+                    <li>Get comfortable using their formal graphical language: string diagrams </li>
+                    <li>Learn about lenses and optics, abstract interfaces for modelling bidirectional data flow</li>
+                    <li>See examples of lenses and optics modelling backpropagation, gradient descent, value iteration and more</li>
+                    <li>Understand how the chain rule is a special case of lens composition</li>
+                </ul>
+                
             </td>
         </tr>
         <tr>
@@ -259,24 +207,30 @@
     <hr class="divider">
 
     
-    <table id="PUTSPEAKERNAMEHERE">
+    <table id="pim">
         <tr>
             <td class="date" rowspan="4">
                 May 14, 2021 <br> 03:00 PM (GMT -3:00)
             </td>
             <td class="title" style="color: #52739e;">
-                Lecture 4: Signal Propagation and Dynamical Isometry in Deep Neural Networks (English) - <a href="https://www.youtube.com/watch?v=IwrpOhfhj9o&t=0s">Recording link</a>
+                Lecture 4: Geometric Deep Learning & Naturality - <a href="">Recording link</a>
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Samuel S Schoenholz (Google Brain)
+                Pim de Haan
             </td>
         </tr>
         
         <tr>
             <td class="abstract">
-                Random neural networks converge to Gaussian Processes in the limit of infinite width. In this talk we will study how signals propagate through these wide and random networks. At large depth, we will show that a phase diagram naturally emerges between an “ordered” phase where all pairs of inputs converge to the same output and a “chaotic” phase where nearby become increasingly dissimilar with depth. We will then consider fluctuations of gradients as they are backpropagated through the network. We will show that the distribution of gradient fluctuations can be controlled via the random distribution of weights used for initialization. We will discuss empirical observations about the relationship between this prior and training dynamics. In his talk, Lechao Xiao will elaborate on this relationship via the Neural Tangent Kernel.
+                By the end of this lecture you will:
+                <ul>
+                    <li>Know several useful basic monads</li>
+                    <li>Be familiar with different equivalent descriptions of monads, including the Kleisli and Eilenberg-Moore categories</li>
+                    <li>Understand how monoids formalize recurrence and aggregation</li>
+                    <li> Finally laugh at the in-joke about monads and monoids</li>
+                </ul>
             </td>
         </tr>
         <tr>
@@ -294,18 +248,18 @@
     <hr class="divider">
 
     
-    <table id="PUTSPEAKERNAMEHERE">
+    <table id="andrew">
         <tr>
             <td class="date" rowspan="4">
                 May 21, 2021 <br> 05:00 PM (GMT -3:00)
             </td>
             <td class="title" style="color: #52739e;">
-                Lecture 5: Neural Network Loss Landscape in High Dimensions (English) - <a href="https://www.youtube.com/watch?v=stTzg8iUaXM">Recording link</a>
+                Lecture 5: Monoids, Monads, Mappings, and lstMs - <a href="">Recording link</a>
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Stanislav Fort (Stanford / Google AI)
+                Andrew Dudzik
             </td>
         </tr>
         
