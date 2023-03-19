@@ -45,16 +45,15 @@
     </table>
     
     <h2>Program</h2>
-    <p>The lecture series consists of <em>2 parts</em>:</p>
-        <h3>The Seminars</h3>
+    <p>The program consists of <em>2 parts</em>, both consisting of online virtual talks that are streamed on Zoom, recorded, with additional discussions happening on the Zulip chat.</p>
+        <h3>The Seminars (Ongoing)</h3>
             <p>A more irregular schedule of deep dives into specific topics of Category Theory,
-            some already showing applications to Machine Learning and some which have
+            taught by invited experts in the area, some already showing applications to Machine Learning and some which have
             not been applied yet.</p>
-        <h3>Introductory Lectures</h3> 
+        <h3>Introductory Lectures (Completed)</h3> 
             <p>The lectures are finished for the moment, but you can still check out their <a href="https://www.youtube.com/playlist?list=PLSdFiFTAI4sQ0Rg4BIZcNnU-45I9DI-VB">recordings</a>!<br> 
             We had weekly introductory lectures, where we 
             taught the basics of category theory with a focus on applications to Machine Learning.</p>  
-        <br>Also, during both parts we'll have discussions and extra activities in our Zulip stream!
     
 
     <!-- <p>
@@ -69,6 +68,183 @@
     <div style="margin: 5%;"></div>
 
     
+    <h2>Seminars</h2>
+    <hr class="divider">
+
+    <h3>Future</h3>
+
+    <table id="jules">
+        <tr>
+            <td class="date" rowspan="4">
+                March 20
+            </td>
+            <td class="title" style="color: #52739e;">
+                Introduction to Categorical Cybernetics
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Jules Hedge
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                Categorical cybernetics is based on two things: (1) the abstract theory of categories of optics and related things, and (2) a whole bunch of specific examples.
+                These tend to arise in topics that historically were called "cybernetics" (before that term drifted beyond recognition) - AI, control theory, game theory, systems theory.
+                Specific examples of "things that compose optically" are derivatives (well known as backprop), exact and approximate Bayesian inverses, payoffs in game theory, values in control theory and reinforcement learning, updates of data (the original setting for lenses), and updates of state machines.
+                I'll do a gentle tour through these, emphasising their shared structure and the field we're developing to study it.
+
+            </td>
+        </tr>
+    
+    <table id="spivak">
+        <tr>
+            <td class="date" rowspan="4">
+                March 27
+            </td>
+            <td class="title" style="color: #52739e;">
+                Dynamic organizational systems: from deep learning to prediction markets
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                David Spivak
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                In training artificial neural networks (ANNs), both neurons and arbitrary populations of neurons can be seen to perform the same type of task. Indeed, at any given moment they provide a function A-->B, and given any input from A and loss signal on B, they do two things: provide an updated function A-->B and backpropagate a loss signal on A. Populations of neurons, which we called "Learners", can be put together in series or in parallel, forming a symmetric monoidal category. However, ANNs satisfy an additional property: there is a consistent method by which the functions update and errors backpropagate; namely, they all use gradient descent. The chain rule implies that the composite of gradient descenders is again a gradient descender.<br> 
+
+                In this talk I will discuss a generalization called "dynamic organizational systems", which includes ANNs, prediction markets, Hebbian learning, and strategic games. It is founded on the category Poly of polynomial functors, which generalizes Lens. I will review the relevant background on Poly and then explain dynamic organizational systems as coherent procedures by which a network of component systems can rewire its network structure in response to the data flowing through it. I'll explain the ANN case, and possibly the prediction market case, time permitting.
+            </td>
+        </tr>
+        <!-- <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-9')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-9" style="display: none;">
+                    <b>Bio:</b> Gergely Neu is a research assistant professor at the Pompeu Fabra University,
+                    Barcelona, Spain. He has previously worked with the SequeL team of INRIA Lille,
+                    France and the RLAI group at the University of Alberta, Edmonton, Canada. He
+                    obtained his PhD degree in 2013 from the Budapest University of Technology and
+                    Economics, where his advisors were András György, Csaba Szepesvári and László
+                    Györfi. His main research interests are in machine learning theory, including
+                    reinforcement learning and online learning with limited feedback and/or very
+                    large action sets. Dr. Neu was the recipient of a Google Faculty Research award
+                    in 2018, the Bosch Young AI Researcher Award in 2019, and an ERC Starting
+                    Grant in 2020.
+                </div>
+            </td>
+        </tr> -->
+    </table>
+
+    <h3>Past</h3>
+    <table id="pietro">
+        <tr>
+            <td class="date" rowspan="4">
+                November 14
+            </td>
+            <td class="title" style="color: #52739e;">
+                Neural network layers as parametric spans - <a href="https://www.youtube.com/watch?v=83a-MwlDy6s">Recording link</a> and <a href="assets/slides/parametric_slides.pdf">Slides</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Pietro Vertechi
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                Properties such as composability and automatic differentiation made artificial neural networks a pervasive tool in applications. Tackling more challenging problems caused neural networks to progressively become more complex and thus difficult to define from a mathematical perspective. In this talk, we will discuss a general definition of linear layer arising from a categorical framework based on the notions of integration theory and parametric spans. This definition generalizes and encompasses classical layers (e.g., dense, convolutional), while guaranteeing existence and computability of the layer's derivatives for backpropagation.
+            </td>
+        </tr>
+        <!-- <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-8')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-8" style="display: none;">
+                    <b>Bio:</b> Gintare Karolina Dziugaite is a Lead Research Scientist at Element AI, a ServiceNow company. She is also an associate member at Mila, the Quebec AI Institute. Her research combines theoretical and empirical approaches to understanding deep learning, with a focus on generalization and network compression. Before joining Element AI, she obtained her Ph.D. in machine learning from the University of Cambridge, under the supervision of Zoubin Ghahramani. Prior to that, she studied Mathematics at the University of Warwick and read Part III in Mathematics at the University of Cambridge, receiving a Masters of Advanced Study (MASt) in Applied Mathematics. In 2020, Karolina was a member of the Institute for Advanced Study,, participating in the special year on Optimization, Statistics, and Theoretical Machine Learning. In 2019, she was a Simons Fellow during the Foundations of Deep Learning program at the Simons Institute for the Theory of Computing at the University of Berkeley from programs. She was also a long-term participant at the Simons Institute in 2017 and 2020 during programs on theoretical machine learning and interpretable machine learning.
+                </div>
+            </td>
+        </tr> -->
+    </table>
+
+
+
+
+    <table id="taco">
+        <tr>
+            <td class="date" rowspan="4">
+                November 21
+            </td>
+            <td class="title" style="color: #52739e;">
+                Causal Model Abstraction & Grounding via Category Theory - <a href="https://www.youtube.com/watch?v=5mZhcXhbciE">Recording link</a> and <a href="assets/slides/2022-11-21-Causality-categories.pdf">Slides</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Taco Cohen
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                Causal models are used in many areas of science to describe data generating processes and reason about the effect of changes to these processes (interventions). Causal models are typically highly abstracted representations of the underlying process, consisting of only a few carefully selected variables, and the causal mechanisms between them. This simplifies causal reasoning, but the relation between the model and the underlying system is never described in mathematical terms, and this has led to considerable philosophical confusions. Furthermore, it has made it hard to understand how causal modeling relates to other fields such as physics (where systems are described by dynamical laws without reference to causes), dynamical systems, and agent-centric frameworks such as Markov Decision Processes (MDPs).<br>
+                In this talk we study this idea of abstraction from a categorical perspective, focussing on two questions in particular:
+                <ul>
+                    <li>What is an appropriate notion of morphism between causal models? When can we say that one model is an abstraction of another? How can we set up a convenient category of causal models?</li>
+                    <li>What does it mean for a causal model to be an abstraction of an underlying dynamical system or Markov decision process?</li>
+                </ul>
+                To answer the first question we will mainly survey the existing literature, while for the second we will present a new approach to grounding causal models in dynamical systems and MDPs via natural transformations, and giving for the first time a mathematical definition of "causal mechanism" as a functional relationship between outcome variables that is invariant to interventions (modelled as transformations of the state space).
+            </td>
+        </tr>
+        <!-- <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-7')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-7" style="display: none;">
+                    <b>Bio:</b> Jaehoon Lee is a senior research scientist at Google Brain team. His main research focus is on fundamental understanding of deep neural networks; actively working on the infinite-width limit of neural networks and their correspondence to the kernel methods. In 2017, he joined Google and started a research career in machine learning as part of the Google Brain Residency program. Before that he was a postdoctoral fellow at University of British Columbia from 2015-2017 working on theoretical high energy physics. Jaehoon obtained his PhD in physics at the Center for Theoretical Physics, Massachusetts Institute of Technology (MIT) in 2015.
+                </div>
+            </td>
+        </tr> -->
+    </table>
+
+
+
+
+    <table id="tai-danae">
+        <tr>
+            <td class="date" rowspan="4">
+                December 12
+            </td>
+            <td class="title" style="color: #52739e;">
+                Category Theory Inspired by LLMs - <a href="https://www.youtube.com/watch?v=_LgWD3UTKfw">Recording link</a> and <a href="assets/slides/TDB_slides.pdf">Slides</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Tai-Danae Bradley
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="abstract">
+                The success of today's large language models (LLMs) is striking, especially given that the training data consists of raw, unstructured text. In this talk, we'll see that category theory can provide a natural framework for investigating this passage from texts—and probability distributions on them—to a more semantically meaningful space. To motivate the mathematics involved, we will open with a basic, yet curious, analogy between linear algebra and category theory. We will then define a category of expressions in language enriched over the unit interval and afterwards pass to enriched copresheaves on that category. We will see that the latter setting has rich mathematical structure and comes with ready-made tools to begin exploring that structure.
+            </td>
+        </tr>
+        <!-- <tr>
+            <td>
+                <a onclick="toggleText('bio-speaker-6')" >Show / Hide Biography</a>
+                <div class='bio' id="bio-speaker-6" style="display: none;">
+                    <b>Bio:</b> Lechao Xiao is a research scientist in the Brain Team, Google Research.  He works on theory of deep learning, including optimization, Gaussian Processes, generalization of neural networks. Before joining Google, he was a Hans Rademacher Instructor at the University of Pennsylvania working on Harmonic analysis. He received his Ph.D. in mathematics from the University of Illinois at Urbana-Champaign in 2014 and his B.S. in mathematics from Zhejiang University in 2009.
+                </div>
+            </td>
+        </tr> -->
+    </table>
+
+
+
+    <h2>Lecture Series</h2>
     <b>Week 1</b>
     <hr class="divider">
     
@@ -280,182 +456,6 @@
                 <a onclick="toggleText('bio-speaker-5')" >Show / Hide Biography</a>
                 <div class='bio' id="bio-speaker-5" style="display: none;">
                     <b>Bio:</b> Stanislav Fort is a PhD student at Stanford University, advised by Prof Surya Ganguli. His research focuses on developing a scientific understanding of deep learning and on applications of machine learning and artificial intelligence in the physical sciences, in domains spanning from X-ray astrophysics to quantum computing. Stanislav spent a year as a Google AI Resident, where he worked on deep learning theories and their applications in collaboration with colleagues from Google Brain and DeepMind. He received his Bachelor’s and Master’s degrees in Physics at Trinity College, University of Cambridge, and a Master’s degree at Stanford University.
-                </div>
-            </td>
-        </tr> -->
-    </table>
-
-
-    <b>Guest Lectures</b>
-    <hr class="divider">
-
-    <table id="pietro">
-        <tr>
-            <td class="date" rowspan="4">
-                November 14
-            </td>
-            <td class="title" style="color: #52739e;">
-                Neural network layers as parametric spans - <a href="https://www.youtube.com/watch?v=83a-MwlDy6s">Recording link</a> and <a href="assets/slides/parametric_slides.pdf">Slides</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Pietro Vertechi
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="abstract">
-                Properties such as composability and automatic differentiation made artificial neural networks a pervasive tool in applications. Tackling more challenging problems caused neural networks to progressively become more complex and thus difficult to define from a mathematical perspective. In this talk, we will discuss a general definition of linear layer arising from a categorical framework based on the notions of integration theory and parametric spans. This definition generalizes and encompasses classical layers (e.g., dense, convolutional), while guaranteeing existence and computability of the layer's derivatives for backpropagation.
-            </td>
-        </tr>
-        <!-- <tr>
-            <td>
-                <a onclick="toggleText('bio-speaker-8')" >Show / Hide Biography</a>
-                <div class='bio' id="bio-speaker-8" style="display: none;">
-                    <b>Bio:</b> Gintare Karolina Dziugaite is a Lead Research Scientist at Element AI, a ServiceNow company. She is also an associate member at Mila, the Quebec AI Institute. Her research combines theoretical and empirical approaches to understanding deep learning, with a focus on generalization and network compression. Before joining Element AI, she obtained her Ph.D. in machine learning from the University of Cambridge, under the supervision of Zoubin Ghahramani. Prior to that, she studied Mathematics at the University of Warwick and read Part III in Mathematics at the University of Cambridge, receiving a Masters of Advanced Study (MASt) in Applied Mathematics. In 2020, Karolina was a member of the Institute for Advanced Study,, participating in the special year on Optimization, Statistics, and Theoretical Machine Learning. In 2019, she was a Simons Fellow during the Foundations of Deep Learning program at the Simons Institute for the Theory of Computing at the University of Berkeley from programs. She was also a long-term participant at the Simons Institute in 2017 and 2020 during programs on theoretical machine learning and interpretable machine learning.
-                </div>
-            </td>
-        </tr> -->
-    </table>
-
-
-
-
-    <table id="taco">
-        <tr>
-            <td class="date" rowspan="4">
-                November 21
-            </td>
-            <td class="title" style="color: #52739e;">
-                Causal Model Abstraction & Grounding via Category Theory - <a href="https://www.youtube.com/watch?v=5mZhcXhbciE">Recording link</a> and <a href="assets/slides/2022-11-21-Causality-categories.pdf">Slides</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Taco Cohen
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="abstract">
-                Causal models are used in many areas of science to describe data generating processes and reason about the effect of changes to these processes (interventions). Causal models are typically highly abstracted representations of the underlying process, consisting of only a few carefully selected variables, and the causal mechanisms between them. This simplifies causal reasoning, but the relation between the model and the underlying system is never described in mathematical terms, and this has led to considerable philosophical confusions. Furthermore, it has made it hard to understand how causal modeling relates to other fields such as physics (where systems are described by dynamical laws without reference to causes), dynamical systems, and agent-centric frameworks such as Markov Decision Processes (MDPs).<br>
-                In this talk we study this idea of abstraction from a categorical perspective, focussing on two questions in particular:
-                <ul>
-                    <li>What is an appropriate notion of morphism between causal models? When can we say that one model is an abstraction of another? How can we set up a convenient category of causal models?</li>
-                    <li>What does it mean for a causal model to be an abstraction of an underlying dynamical system or Markov decision process?</li>
-                </ul>
-                To answer the first question we will mainly survey the existing literature, while for the second we will present a new approach to grounding causal models in dynamical systems and MDPs via natural transformations, and giving for the first time a mathematical definition of "causal mechanism" as a functional relationship between outcome variables that is invariant to interventions (modelled as transformations of the state space).
-            </td>
-        </tr>
-        <!-- <tr>
-            <td>
-                <a onclick="toggleText('bio-speaker-7')" >Show / Hide Biography</a>
-                <div class='bio' id="bio-speaker-7" style="display: none;">
-                    <b>Bio:</b> Jaehoon Lee is a senior research scientist at Google Brain team. His main research focus is on fundamental understanding of deep neural networks; actively working on the infinite-width limit of neural networks and their correspondence to the kernel methods. In 2017, he joined Google and started a research career in machine learning as part of the Google Brain Residency program. Before that he was a postdoctoral fellow at University of British Columbia from 2015-2017 working on theoretical high energy physics. Jaehoon obtained his PhD in physics at the Center for Theoretical Physics, Massachusetts Institute of Technology (MIT) in 2015.
-                </div>
-            </td>
-        </tr> -->
-    </table>
-
-
-
-
-    <table id="tai-danae">
-        <tr>
-            <td class="date" rowspan="4">
-                December 12
-            </td>
-            <td class="title" style="color: #52739e;">
-                Category Theory Inspired by LLMs - <a href="https://www.youtube.com/watch?v=_LgWD3UTKfw">Recording link</a> and <a href="assets/slides/TDB_slides.pdf">Slides</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Tai-Danae Bradley
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="abstract">
-                The success of today's large language models (LLMs) is striking, especially given that the training data consists of raw, unstructured text. In this talk, we'll see that category theory can provide a natural framework for investigating this passage from texts—and probability distributions on them—to a more semantically meaningful space. To motivate the mathematics involved, we will open with a basic, yet curious, analogy between linear algebra and category theory. We will then define a category of expressions in language enriched over the unit interval and afterwards pass to enriched copresheaves on that category. We will see that the latter setting has rich mathematical structure and comes with ready-made tools to begin exploring that structure.
-            </td>
-        </tr>
-        <!-- <tr>
-            <td>
-                <a onclick="toggleText('bio-speaker-6')" >Show / Hide Biography</a>
-                <div class='bio' id="bio-speaker-6" style="display: none;">
-                    <b>Bio:</b> Lechao Xiao is a research scientist in the Brain Team, Google Research.  He works on theory of deep learning, including optimization, Gaussian Processes, generalization of neural networks. Before joining Google, he was a Hans Rademacher Instructor at the University of Pennsylvania working on Harmonic analysis. He received his Ph.D. in mathematics from the University of Illinois at Urbana-Champaign in 2014 and his B.S. in mathematics from Zhejiang University in 2009.
-                </div>
-            </td>
-        </tr> -->
-    </table>
-
-
-
-    <!-- <b>Week 9</b> -->
-    <!-- <hr class="divider"> -->
-
-    <table id="jules">
-        <tr>
-            <td class="date" rowspan="4">
-                March 20
-            </td>
-            <td class="title" style="color: #52739e;">
-                Introduction to Categorical Cybernetics
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="abstract">
-                Categorical cybernetics is based on two things: (1) the abstract theory of categories of optics and related things, and (2) a whole bunch of specific examples.
-                These tend to arise in topics that historically were called "cybernetics" (before that term drifted beyond recognition) - AI, control theory, game theory, systems theory.
-                Specific examples of "things that compose optically" are derivatives (well known as backprop), exact and approximate Bayesian inverses, payoffs in game theory, values in control theory and reinforcement learning, updates of data (the original setting for lenses), and updates of state machines.
-                I'll do a gentle tour through these, emphasising their shared structure and the field we're developing to study it.
-
-            </td>
-        </tr>
-    
-    <table id="spivak">
-        <tr>
-            <td class="date" rowspan="4">
-                March 27
-            </td>
-            <td class="title" style="color: #52739e;">
-                Dynamic organizational systems: from deep learning to prediction markets
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                David Spivak
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="abstract">
-                In training artificial neural networks (ANNs), both neurons and arbitrary populations of neurons can be seen to perform the same type of task. Indeed, at any given moment they provide a function A-->B, and given any input from A and loss signal on B, they do two things: provide an updated function A-->B and backpropagate a loss signal on A. Populations of neurons, which we called "Learners", can be put together in series or in parallel, forming a symmetric monoidal category. However, ANNs satisfy an additional property: there is a consistent method by which the functions update and errors backpropagate; namely, they all use gradient descent. The chain rule implies that the composite of gradient descenders is again a gradient descender.<br> 
-
-                In this talk I will discuss a generalization called "dynamic organizational systems", which includes ANNs, prediction markets, Hebbian learning, and strategic games. It is founded on the category Poly of polynomial functors, which generalizes Lens. I will review the relevant background on Poly and then explain dynamic organizational systems as coherent procedures by which a network of component systems can rewire its network structure in response to the data flowing through it. I'll explain the ANN case, and possibly the prediction market case, time permitting.
-            </td>
-        </tr>
-        <!-- <tr>
-            <td>
-                <a onclick="toggleText('bio-speaker-9')" >Show / Hide Biography</a>
-                <div class='bio' id="bio-speaker-9" style="display: none;">
-                    <b>Bio:</b> Gergely Neu is a research assistant professor at the Pompeu Fabra University,
-                    Barcelona, Spain. He has previously worked with the SequeL team of INRIA Lille,
-                    France and the RLAI group at the University of Alberta, Edmonton, Canada. He
-                    obtained his PhD degree in 2013 from the Budapest University of Technology and
-                    Economics, where his advisors were András György, Csaba Szepesvári and László
-                    Györfi. His main research interests are in machine learning theory, including
-                    reinforcement learning and online learning with limited feedback and/or very
-                    large action sets. Dr. Neu was the recipient of a Google Faculty Research award
-                    in 2018, the Bosch Young AI Researcher Award in 2019, and an ERC Starting
-                    Grant in 2020.
                 </div>
             </td>
         </tr> -->
